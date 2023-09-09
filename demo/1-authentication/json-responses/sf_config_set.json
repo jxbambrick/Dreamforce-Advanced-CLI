@@ -1,0 +1,14 @@
+{
+    "status": 0,
+    "result": {
+        "successes": [
+            {
+                "name": "target-org",
+                "value": "CGI-CLI-DEMO-PROD",
+                "success": true
+            }
+        ],
+        "failures": []
+    },
+    "warnings": []
+}

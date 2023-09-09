@@ -1,0 +1,20 @@
+{
+    "status": 0,
+    "result": {
+        "access=Token": "00DHo000001Zbfz!AQEAQBFea6SA0NUIVvoL7FRdKDCwsCXKgn6UBCKxq5wN5NkcugXqdNf5tJlCtjn1OeX72xknsonkWEiX0p4XChvyVEJy8.ux",
+        "instanceUrl": "https://cgidreamfrcecli.my.salesforce.com",
+        "orgId": "00DHo000001ZbfzMAC",
+        "username": "josh.bambrick@cgi.com.cgidreamfrccecli",
+        "loginUrl": "https://cgidreamfrcecli.my.salesforce.com",
+        "refreshToken": "5Aep861d4hgbXaddIpRMkzYiWJAykcbwiXKaRu.Hq4T1F5cTMUUIBTuADHop4mCZtXTFLTVjixSYNXsba_76U0S",
+        "clientId": "PlatformCLI",
+        "isDevHub": true,
+        "instanceApiVersion": "58.0",
+        "instanceApiVersionLastRetrieved": "8/23/2023, 10:34:22 AM",
+        "clientSecret": ""
+    },
+    "warnings": [
+        "The \"--setdefaultusername\" flag has been deprecated. Use \"--set-default | -s\" instead.",
+        "The \"--setalias\" flag has been deprecated. Use \"--alias | -a\" instead."
+    ]
+}

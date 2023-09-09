@@ -1,0 +1,11 @@
+{
+    "code": 1,
+    "context": "RetrieveMetadata",
+    "commandName": "RetrieveMetadata",
+    "message": "The specified metadata type is unsupported: [actvpfrmdataconnectors3]",
+    "name": "SfError",
+    "status": 1,
+    "stack": "SfError: The specified metadata type is unsupported: [actvpfrmdataconnectors3]\n    at ComponentSetBuilder.build (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/source-deploy-retrieve/lib/src/collections/componentSetBuilder.js: 134: 23)\n    at async buildRetrieveAndDeleteTargets (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/plugin-deploy-retrieve/lib/commands/project/retrieve/start.js: 299: 41)\n    at async RetrieveMetadata.run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/plugin-deploy-retrieve/lib/commands/project/retrieve/start.js: 42: 78)\n    at async RetrieveMetadata._run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/command.js: 117: 22)\n    at async Config.runCommand (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/config/config.js: 329: 25)\n    at async run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/main.js: 89: 16)",
+    "exitCode": 1,
+    "warnings": []
+}

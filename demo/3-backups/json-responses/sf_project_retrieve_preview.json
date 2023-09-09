@@ -1,0 +1,11 @@
+{
+    "status": 0,
+    "result": {
+        "ignored": [],
+        "toDeploy": [],
+        "toRetrieve": [],
+        "toDelete": [],
+        "conflicts": []
+    },
+    "warnings": []
+}

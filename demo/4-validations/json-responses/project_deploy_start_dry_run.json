@@ -1,0 +1,88 @@
+{
+    "status": 0,
+    "result": {
+        "checkOnly": true,
+        "completedDate": "2023-08-31T01:34:02.000Z",
+        "createdBy": "005Ho000009A5vX",
+        "createdByName": "Josh Bambrick",
+        "createdDate": "2023-08-31T01:33:59.000Z",
+        "details": {
+            "componentSuccesses": [
+                {
+                    "changed": false,
+                    "componentType": "CustomField",
+                    "created": false,
+                    "createdDate": "2023-08-31T01:34:02.000Z",
+                    "deleted": false,
+                    "fileName": "objects/CustomWidget__c.object",
+                    "fullName": "CustomWidget__c.Widget_Name__c",
+                    "id": "00NDy000002q9omMAA",
+                    "success": true
+                },
+                {
+                    "changed": true,
+                    "componentType": "",
+                    "created": false,
+                    "createdDate": "2023-08-31T01:34:02.000Z",
+                    "deleted": false,
+                    "fileName": "package.xml",
+                    "fullName": "package.xml",
+                    "success": true
+                },
+                {
+                    "changed": false,
+                    "componentType": "CustomObject",
+                    "created": false,
+                    "createdDate": "2023-08-31T01:34:02.000Z",
+                    "deleted": false,
+                    "fileName": "objects/CustomWidget__c.object",
+                    "fullName": "CustomWidget__c",
+                    "id": "01IDy0000007fMAMAY",
+                    "success": true
+                }
+            ],
+            "runTestResult": {
+                "numFailures": 0,
+                "numTestsRun": 0,
+                "totalTime": 0,
+                "codeCoverage": [],
+                "codeCoverageWarnings": [],
+                "failures": [],
+                "flowCoverage": [],
+                "flowCoverageWarnings": [],
+                "successes": []
+            },
+            "componentFailures": []
+        },
+        "done": true,
+        "id": "0AfDy00000m0hyaKAA",
+        "ignoreWarnings": false,
+        "lastModifiedDate": "2023-08-31T01:34:02.000Z",
+        "numberComponentErrors": 0,
+        "numberComponentsDeployed": 2,
+        "numberComponentsTotal": 2,
+        "numberTestErrors": 0,
+        "numberTestsCompleted": 0,
+        "numberTestsTotal": 0,
+        "rollbackOnError": true,
+        "runTestsEnabled": false,
+        "startDate": "2023-08-31T01:33:59.000Z",
+        "status": "Succeeded",
+        "success": true,
+        "files": [
+            {
+                "fullName": "CustomWidget__c.Widget_Name__c",
+                "type": "CustomField",
+                "state": "Unchanged",
+                "filePath": "/Users/bambrick/DevCenter/Dreamforce/AdvancedCLI/force-app/main/default/objects/CustomWidget__c/fields/Widget_Name__c.field-meta.xml"
+            },
+            {
+                "fullName": "CustomWidget__c",
+                "type": "CustomObject",
+                "state": "Unchanged",
+                "filePath": "/Users/bambrick/DevCenter/Dreamforce/AdvancedCLI/force-app/main/default/objects/CustomWidget__c/CustomWidget__c.object-meta.xml"
+            }
+        ]
+    },
+    "warnings": []
+}

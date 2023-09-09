@@ -1,0 +1,23 @@
+{
+    "code": 1,
+    "context": "DeployMetadata",
+    "commandName": "DeployMetadata",
+    "data": {
+        "code": "InvalidChar",
+        "msg": "char "{
+            " is not expected.",
+            "line": 1,
+            "col": 1
+        },
+        "message": "Invalid manifest file: scripts/demo/4-validations/json-responses/project_deploy_preview.json.  InvalidChar: char "{
+            " is not expected. (Line 1 Column 1)",
+            "name": "InvalidManifest",
+            "status": 1,
+            "stack": "InvalidManifest: Invalid manifest file: scripts/demo/4-validations/json-responses/project_deploy_preview.json.  InvalidChar: char "{
+                " is not expected. (Line 1 Column 1)\n    at ManifestResolver.resolve (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/source-deploy-retrieve/lib/src/resolve/manifestResolver.js:28:27)\n    at async ComponentSet.fromManifest (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/source-deploy-retrieve/lib/src/collections/componentSet.js:101:26)\n    at async ComponentSetBuilder.build (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/source-deploy-retrieve/lib/src/collections/componentSetBuilder.js:55:32)",
+                "exitCode": 1,
+                "warnings": []
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "code": 1,
+    "context": "RetrieveMetadata",
+    "commandName": "RetrieveMetadata",
+    "message": "The following error occurred:\n  --package-name=WidgetUpdatesv1 cannot also be provided when using --output-dir\nSee more help with --help",
+    "name": "Error",
+    "status": 1,
+    "stack": "Error: The following error occurred:\n  --package-name=WidgetUpdatesv1 cannot also be provided when using --output-dir\nSee more help with --help\n    at validateFlags (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/parser/validate.js:60:19)\n    at async Object.parse (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/parser/index.js:19:5)\n    at async RetrieveMetadata.parse (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/command.js:221:25)\n    at async RetrieveMetadata.run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@salesforce/plugin-deploy-retrieve/lib/commands/project/retrieve/start.js:31:27)\n    at async RetrieveMetadata._run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/command.js:117:22)\n    at async Config.runCommand (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/config/config.js:329:25)\n    at async run (/opt/homebrew/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/main.js:89:16)",
+    "exitCode": 1,
+    "warnings": []
+}
