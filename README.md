@@ -1,18 +1,29 @@
-# Salesforce DX Project: Next Steps
+# Unlocking the Potential with Salesforce CLI: Advanced Topics
+**Presented at Salesforce Dreamforce**
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+### Welcome!
 
-## How Do You Plan to Deploy Your Changes?
+Hello and welcome to the "Unlocking the Potential with Salesforce CLI: Advanced Topics" presentation at Salesforce Dreamforce! We're thrilled to have you join us as we delve deeper into the world of Salesforce CLI and explore some advanced capabilities that can elevate your Salesforce development and administration practices. The presentation includes several hands-on code samples that will help demonstrate the power and versatility of the Salesforce CLI.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+### About the Author
 
-## Configure Your Salesforce DX Project
+Joshua Bambrick is a Salesforce Solution Architect and Release Manager at CGI. Feel free to reach out and connect:
+- LinkedIn: https://www.linkedin.com/in/joshuabambrick/
+- Blog: https://iwillteachyousalesforce.com/
+- Email: josh.bambrick@gmail.com, josh.bambrick@cgi.com
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Prerequisites
 
-## Read All About It
+Many of the code samples require a basic setup. Make sure to install VSCode as well as the basic Saleforce Extensions and the latest version of the Salesforce CLI.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Feedback & Questions
+
+Your feedback and questions are invaluable to us. Please feel free to approach after the presentation or drop an email with any questions, comments, or thoughts. Let's make this a collaborative learning experience!
+
+### Special Acknowledgement
+
+Also, a huge shout out to Greg Lovelidge at https://protopixel.dev/ for providing technical support and feedback on the presentation. Greg is a 7x certified Salesforce Solution Architect and Developer. You can connect with him on LinkedIn: https://www.linkedin.com/in/gregory-lovelidge-13b20731
+
+### Thank You!
+
+A big thank you for attending the presentation and for your ongoing commitment to learning and improving. Let's unlock the immense potential of Salesforce CLI together!
