@@ -1,10 +1,15 @@
-// Author: Greg Lovelidge ()
-// Last Modified: 6/22/2021
+// Author: Greg Lovelidge
+// Email: greglovelidge@gmail.com
+// Website: protopixel.dev/Protopixel.dev
+// LinkedIn: linkedin.com/in/gregory-lovelidge-13b20731
+
+// Description: This script removes nodes from an XML file based on a path and a value.
 
 // Dependencies: Run the following command to installed required dependencies:
 // - npm install glob xmldom yargs
 
 // ***** Example for metadata format *****
+
 // node scripts/node/remove-nodes.js -f "**/*.profile" -p Profile.  -v 
 // <layoutAssignments>
 //     <layout>Account_Geolocation__c-Account Geolocation Layout</layout>
@@ -17,6 +22,7 @@
 // node scripts/node/remove-nodes.js -f "**/*.profile" -p Profile.userPermissions.name -v CIIS_SupplyChainInfoChangeNotofication
 
 // ***** Example for Source Format *****
+
 // <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
 //    <fieldPermissions>
 //        <editable>false</editable>
@@ -28,7 +34,6 @@
 // node scripts/support/sf_remove_nodes.js -f "**/*.profile-meta.xml" -p Profile.layoutAssignments.layout -v "Account-Account Layout"
 
 
-/** * This script removes nodes from an XML file based on a path and a value. */ 
 const fs = require("fs/promises");
 const { glob } = require("glob");
 const xmldom = require("xmldom").DOMParser;
