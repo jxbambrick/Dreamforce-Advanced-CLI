@@ -23,78 +23,6 @@ sf org login sfdx-url*
 - can be used for proof-of-concept ideas, quick/insecure CI/CD pipeline
 
 
-## Create Orgs - Scratch Orgs are Ephemeral!
-Need to have both sandbox and scratch org
-
-sf org create sandbox
---json
---definition-file
--set-default: set org as your defualt
---alias
---wait
---poll-interval: seconds between retries
---async
---name: alphanumeric, 10 chars
---clone
---license-type: Developer, Developer_Pro, Partial, Full
---target-org
---no-prompt
---no-tract-source
-
-sf org create scratch
-- what is a definition file
-
-sf org create shape
-- ask Greg about org shapes
-
-sf org create snapshot (pilot)
-- requires an invite to use,
-- point in time copy of a scratch org
-
-- when making an org or taking a backup each license type must be like for like, only prod lets you copy to any license
-- what is a definition file and how is it used
-- when cloning, test that you can create a dup only when using like for like licenses
-- how to create a dev hub (enable)
-
-- Scratch Org Definition File:
-    - https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_def_file.htm
-
-- Sandbox Definition file:
-    - https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_sandbox_definition.htm
-
-sf limits api display --json --target-org CGI-CLI-DEMO_PROD 
-*use jq to filter out just the info we need on sandbox creation limits
-
-
-### Demo Code - Create Org:
-
-sf org create scratch --target-dev-hub CGI-CLI-DEMO-PROD --definition-file config/cgi-scratch-def.json --json
-
-sf org create sandbox --async --name cgidev1 --licenseType Developer --json
-sf org create sandbox --async --name cgidev2 --licenseType Developer --json
-sf org create sandbox --async --name cgidev3 --licenseType Developer --json
-sf org create sandbox --async --name cgitest --licenseType Partial --json
-sf org create sandbox --async --name cgisit --licenseType Partial --json
-sf org create sandbox --async --name cgiuat --licenseType Full --json
-
-
-## Create Users
-
-sf org create user
-- customize users then create a definition file and use def-flag option
-- explain default char if not specified: username is admin username with timestamp prepended, profile is standard user, no user password, command complete will display the username and user ID
-- when to use auto generated user vs specific users, how to use alias
-- why I always specify the api version and target-org
-- def file info: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_users_def_file.htm
-
-- create a small program to convert csv file into json for a def file,
--- doing so enables specifying the profile name rather than the ID
-https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_users_def_file.htm
-
-Overall support: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs.htm
--issue when using single flag when able to send multiple issue: --tests test1 test2 test3 etc.
-
-
 ## Manifest
 sf project generate 
 --json
@@ -126,8 +54,6 @@ there is a 4th option:
 
 sf project retrieve can pull down one or more change sets
 - using a cusotm program those change sets can be merged into a single change set and/or reviewed 
-
-
 
 * merge existing manifest files into one
 * sf-git-delta to generate a manifest based on two different commits
@@ -259,48 +185,5 @@ sf project deploy start --target-org test --manifest path/to/local --test-level 
 sf project deploy start --target-org test --source-dir force-app --test-level RunSpecifiedTests --tests test1 --tests test2 --api-version 57.0 --json
 
 
-## Pipeline
-sf project generate --name mywork
-- command to generate an sfdx project that will be necessary for many commands to run
---json
---name
---template: standard,empty,analytics
---output-dir
---namespace
---default-package-dir:force-app
---manifest:boolean will generate a default manifest file
---api-version
-
-## PMD
-
- 
-## SF DMU
-
-- Salesforce DMU could be an entire session all on its own. 
-- Its a powerful tool for data that can handle self referencing objects. 
-
-
-
 # ***** Notes *****
 jq is really powerful tool for working with cli, use the --json flag when possible
-
-# TODO Notes
-- create a dev hub
-- create a list of test dev users
-- view for dev team - like in TXRRC Prod
-- figure out how to use sf-git-delta
-- setup/install jq, have sample commands ready to go
-- update all commands to use final code for easy copy/paste
-- insert the salesforce validation fish as part of the slides
-- insert slide with sample env. heirachy scratc1, scratch2, dev1, dev2, dev3, test, sit, uat, prod
-- create sample org
-- create sample pre/post destructive deploy changes
-- come up with example when to use pre/post deployment stes: predeploy -> change field from one type to another
-- talk about the sf cli issue tracker, have link/page ready to go
-
-# TODO Scripts
-- update def json file entry version: scratch org, sandbox
-- create a transform script that takes csv and makes def json file: users, sandbox, scatch org
-- profile cleaner - compare manifest files from target to local
-- manifest merger
-- apex test scanner
