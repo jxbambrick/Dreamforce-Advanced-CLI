@@ -118,7 +118,8 @@ def genreate_manifest_from_org():
 
 def generate_manifest_from_change_sets():
 
-    # sf project retrieve start --target-org env_prod --package-name WidgetUpdatesv1 --target-metadata-dir md/WidgetUpdatesv1 --unzip --api-version api_version --json
+    # sf project retrieve start --target-org env_prod --package-name WidgetUpdatesv1 
+    # --target-metadata-dir md/WidgetUpdatesv1 --unzip --api-version api_version --json
     change_set_name = "WidgetUpdatesv1"
 
     # *special behavior when using --unzip

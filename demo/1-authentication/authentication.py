@@ -36,7 +36,8 @@ def main():
         # write_response_to_file(sf_result_json, output_file)
 
         # get the command and log in to the org
-        # sf org login sfdx-url --sfdx-url-file scripts/demo/1-authentication/sf_org_display.json --setdefaultusername --setalias CGI-CLI-DEMO-PROD --json
+        # sf org login sfdx-url --sfdx-url-file scripts/demo/1-authentication/sf_org_display.json 
+        # --setdefaultusername --setalias CGI-CLI-DEMO-PROD --json
         command = ["sf", "org", "login", "sfdx-url", "--sfdx-url-file",
                    output_file, "--setdefaultusername", "--setalias", org_alias, "--json"]
         

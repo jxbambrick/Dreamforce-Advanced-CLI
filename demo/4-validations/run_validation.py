@@ -32,7 +32,6 @@ def main():
     # validate the deployment
     project_deploy_validate()
 
-    # TODO: need to complete testing method
     # validate just apex 
     apex_run_tests()
 
@@ -41,7 +40,8 @@ def main():
 def project_deploy_preview():
 
     # sf project retrieve start --target-org env_dev1 --api-version api_version --json
-    command = ["sf", "project", "deploy", "preview", "--target-org", env_dev1, "--manifest", "scripts/demo/4-validations/preview-package.xml", "--json"]
+    command = ["sf", "project", "deploy", "preview", "--target-org", env_dev1, "--manifest", 
+               "scripts/demo/4-validations/preview-package.xml", "--json"]
 
     sf_process_results = execute_step(command)
     sf_result_json = json.loads(sf_process_results)
@@ -51,11 +51,13 @@ def project_deploy_preview():
         print("Success: project preview")
 
 
-# 
+
 def project_deploy_start_validation():
 
     # sf project deploy start --target-org env_dev1 --test-level NoTestRun --api-version api_version --json
-    command = ["sf", "project", "deploy", "start", "--target-org", env_dev1, "--manifest", "scripts/demo/4-validations/resources/preview-package.xml", "--test-level", "NoTestRun", "--api-version", api_version, "--dry-run", "--json"]
+    command = ["sf", "project", "deploy", "start", "--target-org", env_dev1, "--manifest", 
+               "scripts/demo/4-validations/resources/preview-package.xml", "--test-level", "NoTestRun", 
+               "--api-version", api_version, "--dry-run", "--json"]
     # NoTestRun is an ooption only on the project deploy start
 
     sf_process_results = execute_step(command)
@@ -71,8 +73,10 @@ def project_deploy_validate():
     
     # preferred method to validate
     # tests need to be individual
-    # sf project deploy validate --target-org env_dev1 --manifest scripts/demo/4-validations/resources/preview-package.xml --api-version api_version --json
-    command = ["sf", "project", "deploy", "validate", "--target-org", env_dev1, "--manifest", "scripts/demo/4-validations/resources/preview-package.xml", "--api-version", api_version, "--json"]
+    # sf project deploy validate --target-org env_dev1 --manifest scripts/demo/4-validations/resources/preview-package.xml 
+    # --api-version api_version --json
+    command = ["sf", "project", "deploy", "validate", "--target-org", env_dev1, "--manifest", 
+               "scripts/demo/4-validations/resources/preview-package.xml", "--api-version", api_version, "--json"]
 
     apex_test_flags = get_apex_test_flags()
     command.extend(apex_test_flags)
@@ -95,7 +99,8 @@ def project_deploy_validate():
 def apex_run_tests():
 
     # sf project retrieve start --target-org env_dev1 --api-version api_version --json
-    command = ["sf", "apex", "tests", "run", "--target-org", env_dev1, "--test-level", "RunSpecifiedTests", "--tests", "sample-test-1", "--detailed-coverage", "--api-version", api_version, "--json"]
+    command = ["sf", "apex", "tests", "run", "--target-org", env_dev1, "--test-level", "RunSpecifiedTests", 
+               "--tests", "sample-test-1", "--detailed-coverage", "--api-version", api_version, "--json"]
 
     sf_process_results = execute_step(command)
     sf_result_json = json.loads(sf_process_results)
