@@ -67,7 +67,7 @@ def project_deploy_start_validation():
         print("Success: project deploy start --dry-run")
 
 
-# TODO: need to complete testing method
+
 def project_deploy_validate():
     
     # preferred method to validate
@@ -92,9 +92,9 @@ def project_deploy_validate():
         write_response_to_file(sf_result_json, output_file)
 
 
-# TODO need to complete testing method
+
 def apex_run_tests():
-    # TODO create a sample Apex test to run
+
     # sf project retrieve start --target-org env_dev1 --api-version api_version --json
     command = ["sf", "apex", "tests", "run", "--target-org", env_dev1, "--test-level", "RunSpecifiedTests", "--tests", "sample-test-1", "--detailed-coverage", "--api-version", api_version, "--json"]
 

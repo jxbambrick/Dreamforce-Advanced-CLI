@@ -22,19 +22,14 @@ env_dev1 = "CGI-DEMO-DEV1"
 
 
 def main():
-    # TODO: need to complete testing method
     # get_apex_test_classes()
 
     # validate_test_packages()
 
-    # TODO: need to complete testing method
-    remove_nodes_from_metadata()
-
-    # TODO: need to complete testing method
-    # sf_dmu_backup_data()
+    # remove_nodes_from_metadata()
+    pass
 
 
-# TODO: need to complete testing method
 def get_apex_test_classes():
 
     apex_test_class_flags = get_apex_test_classes_formatted()
@@ -61,7 +56,7 @@ def validate_test_packages():
 
 
 def remove_nodes_from_metadata():
-    # Run the other Python script
+    
     # node scripts/support/sf_remove_nodes.js -f "**/*.profile-meta.xml" -p Profile.fieldPermissions.field -v "CustomWidget__c.Custom_Widget_Name__c"
     subprocess.run(["node", "scripts/custom/sf_remove_nodes.js", "-f", "**/*.profile-meta.xml",
                    "-p", "Profile.fieldPermissions.field", "-v", "CustomWidget__c.Custom_Widget_Description__c"])
@@ -73,14 +68,6 @@ def remove_nodes_from_metadata():
     # </fieldPermissions>
 
     print("***** remove_nodes_metadata *****")
-
-
-# TODO: need to complete testing method
-def sf_dmu_backup_data():
-
-    # Run the other Python script
-    # subprocess.run(["python", "script_to_run.py"])
-    pass
 
 
 # ********** Support Methods **********
