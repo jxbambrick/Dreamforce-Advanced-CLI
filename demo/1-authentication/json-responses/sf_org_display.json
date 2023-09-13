@@ -3,12 +3,12 @@
     "result": {
         "id": "00DHo000001ZbfzMAC",
         "apiVersion": "58.0",
-        "accessToken": "00DHo000001Zbfz!AQEAQBFea6SA0NUIVvoL7FRdKDCwsCXKgn6UBCKxq5wN5NkcugXqdNf5tJlCtjn1OeX72xknsonkWEiX0p4XChyyVEJy7.ux",
+        "accessToken": "***REMOVED***",
         "instanceUrl": "https://cgidreamfrcecli.my.salesforce.com",
         "username": "josh.bambrick@cgi.com.cgidreamfrccecli",
         "clientId": "PlatformCLI",
         "connectedStatus": "Connected",
-        "sfdxAuthUrl": "force://PlatformCLI::5Aep861d4hgbXaddIpRMkzYiWJAykcbwiXKaRu.Hq4T1F5cTMUUIBTuADHop4mCZtXTFLTVjixSYNXsba_76U0S@cgidreamfrcecli.my.salesforce.com",
+        "sfdxAuthUrl": "***REMOVED***",
         "alias": "CGI-CLI-DEMO-PROD"
     },
     "warnings": [
