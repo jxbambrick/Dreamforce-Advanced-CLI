@@ -29,7 +29,6 @@ def main():
     # validate the deployment #1
     project_deploy_start_validation()
 
-    # TODO: need to complete testing method
     # validate the deployment
     project_deploy_validate()
 

@@ -44,9 +44,6 @@ def main():
         sf_result_json = json.loads(sf_process_results)
         result_status = get_result_status(sf_result_json)
 
-        sf_result_json = json.loads(sf_process_results)
-        result_status = get_result_status(sf_result_json)
-
         if result_status == 0:
             print(f"Success: authenticated to {org_alias}")
             
